@@ -1,0 +1,256 @@
+/* GLOBAL SETTINGS */
+
+body{
+margin:0;
+padding:0;
+background:black;
+color:#00ff9c;
+font-family:'Share Tech Mono', monospace;
+overflow:hidden;
+}
+
+
+/* MATRIX BACKGROUND */
+
+#matrixCanvas{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+
+/* LOGIN SCREEN */
+
+#loginScreen{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+
+.loginBox{
+border:1px solid #00ff9c;
+padding:40px;
+background:rgba(0,0,0,0.85);
+box-shadow:0 0 20px rgba(0,255,156,0.4);
+}
+
+.loginBox input{
+display:block;
+width:250px;
+margin:15px auto;
+padding:10px;
+background:black;
+border:1px solid #00ff9c;
+color:#00ff9c;
+font-family:inherit;
+}
+
+.loginBox input:focus{
+outline:none;
+box-shadow:0 0 10px #00ff9c;
+}
+
+.loginBox button{
+padding:10px 25px;
+background:#00ff9c;
+border:none;
+color:black;
+cursor:pointer;
+font-weight:bold;
+}
+
+.loginBox button:hover{
+background:#00cc7a;
+transform:scale(1.05);
+}
+
+#loginMessage{
+margin-top:10px;
+color:red;
+}
+
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:20px;
+border-bottom:1px solid #00ff9c;
+background:rgba(0,0,0,0.8);
+}
+
+
+/* MAIN LAYOUT */
+
+.layout{
+display:flex;
+height:90vh;
+}
+
+
+/* TERMINAL SECTION */
+
+.terminalSection{
+flex:3;
+padding:20px;
+border-right:1px solid #00ff9c;
+overflow:auto;
+}
+
+#terminalOutput{
+height:70vh;
+overflow-y:auto;
+margin-bottom:10px;
+}
+
+#terminalOutput div{
+margin:4px 0;
+}
+
+.terminalInputLine{
+display:flex;
+}
+
+.terminalPrompt{
+margin-right:10px;
+}
+
+#terminalInput{
+flex:1;
+background:black;
+border:none;
+color:#00ff9c;
+outline:none;
+font-family:inherit;
+font-size:14px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard{
+flex:1;
+padding:20px;
+overflow:auto;
+}
+
+
+/* PANELS */
+
+.panel{
+border:1px solid #00ff9c;
+padding:15px;
+margin-bottom:20px;
+background:rgba(0,0,0,0.6);
+box-shadow:0 0 10px rgba(0,255,156,0.2);
+}
+
+.panel h2{
+margin-top:0;
+}
+
+
+/* CHARTS */
+
+canvas{
+width:100%;
+margin-top:10px;
+}
+
+
+/* ATTACK PROGRESS BAR */
+
+.progressContainer{
+width:100%;
+height:20px;
+border:1px solid #00ff9c;
+margin-top:10px;
+}
+
+#attackBar{
+height:100%;
+width:0%;
+background:#00ff9c;
+transition:width 0.2s;
+}
+
+
+/* DATABASE PANEL */
+
+#databasePanel{
+margin-top:10px;
+max-height:120px;
+overflow-y:auto;
+}
+
+#databasePanel div{
+padding:5px;
+border-bottom:1px solid #003f2a;
+}
+
+#databasePanel div:hover{
+background:rgba(0,255,156,0.2);
+cursor:pointer;
+}
+
+
+/* CYBER MAP */
+
+#worldMap{
+margin-top:10px;
+padding:10px;
+border:1px solid #00ff9c;
+height:120px;
+overflow:auto;
+background:rgba(0,0,0,0.7);
+}
+
+
+/* BUTTONS */
+
+button{
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#00ff9c;
+}
+
+
+/* TEXT GLOW EFFECT */
+
+h1,h2{
+text-shadow:0 0 10px #00ff9c;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:900px){
+
+.layout{
+flex-direction:column;
+}
+
+.terminalSection{
+border-right:none;
+border-bottom:1px solid #00ff9c;
+}
+
+}
