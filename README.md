@@ -12,7 +12,7 @@ This interface is inspired by **cyberpunk and Matrix-style security dashboards**
 
 You can view the project here:
 
-https://anihack06.github.io/cyber-center/
+https://anihack06.github.io/cyber_command-center/
 
 ---
 
